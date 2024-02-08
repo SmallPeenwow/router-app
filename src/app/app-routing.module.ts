@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
+// There is routes order. WildCard '**' should be at bottom of routing order
 const routes: Routes = [
   { path: '', component: FirstComponent },
   { path: 'second', component: SecondComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
