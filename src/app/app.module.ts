@@ -7,6 +7,7 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactModule } from './contact/contact.module';
+import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { ContactModule } from './contact/contact.module';
     SecondComponent,
     NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ContactModule],
+  imports: [BrowserModule, AppRoutingModule, ContactModule, ProductsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
